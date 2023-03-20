@@ -1,0 +1,12 @@
+server.port: 8080
+spring:
+  application.name: web-app
+  profiles.active: dev
+  cloud.vault:
+    uri: http://localhost:8200
+    authentication: TOKEN
+    token: hvs.TTT0xHPlSd2O7JemzRlgsvlh
+  config.import: vault://secret/${spring.application.name}/${spring.profiles.active}/database
+
+logging.level.root: INFO
+logging.level.org.springframework.vault: DEBUG
