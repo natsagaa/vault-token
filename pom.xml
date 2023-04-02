@@ -5,14 +5,14 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.0.4</version>
+		<version>3.0.5</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.example.vault.approle</groupId>
-	<artifactId>vault-approle</artifactId>
+	<groupId>com.example.vault</groupId>
+	<artifactId>token</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>vault-approle</name>
-	<description>Vault approle demo project for Spring Boot</description>
+	<name>vault-token</name>
+	<description>Vault token authentication demo project for Spring Boot</description>
 	<properties>
 		<java.version>17</java.version>
 		<spring-cloud.version>2022.0.1</spring-cloud.version>

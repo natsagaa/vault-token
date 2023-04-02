@@ -1,4 +1,4 @@
-# vault-approle
+# vault-token
 
 This apps demonstrates how to authenticate to HashiCorp Vault using token authentication method
 

@@ -1,24 +1,30 @@
-package com.example.vault.approle.vaultapprole;
+package com.example.vault.token;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import jakarta.annotation.PostConstruct;
+import lombok.extern.slf4j.Slf4j;
 
+@Slf4j
 @SpringBootApplication
-public class VaultApproleApplication {
+public class VaultTokenApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(VaultApproleApplication.class, args);
+		SpringApplication.run(VaultTokenApplication.class, args);
 	}
 
 	@Value("${username}")
 	private String username;
 
+	@Value("${password}")
+	private String password;
+
 	@PostConstruct
 	public void print(){
-		System.out.println("Username is: " + username);
+		log.info("Username is: " + username);
+		log.info("Password is: " + password);
 	}
 
 }
